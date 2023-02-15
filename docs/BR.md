@@ -1946,7 +1946,7 @@ Table: Unrestricted Extended Key Usage Purposes (Affiliated Cross-Certified CA)
 | `anyExtendedKeyUsage`  | The special extended key usage to indicate there are no restrictions applied. If present, this MUST be the only key usage present. |
 | Any other value        | CAs MUST NOT include any other key usage with the `anyExtendedKeyUsage` key usage present. |
 
-Alternatively, if the Issuing CA does not use this form, then the Extended Key Usage extension MUST be encoded as specified in [Section 7.1.2.2.5](#71225-cross-certified-subordinate-ca-extended-key-usage---restricted).
+Alternatively, if the Issuing CA does not use this form, then the Extended Key Usage extension, if present, MUST be encoded as specified in [Section 7.1.2.2.5](#71225-cross-certified-subordinate-ca-extended-key-usage---restricted).
 
 ##### 7.1.2.2.5 Cross-Certified Subordinate CA Extended Key Usage - Restricted
 
