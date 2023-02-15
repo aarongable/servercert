@@ -1916,8 +1916,10 @@ The `subject` MUST comply with the requirements of [Section 7.1.4](#714-name-for
 In addition to the above, extKeyUsage extension requirements vary based on the relationship between the Issuer and Subject organizations represented in the Cross-Certificate.
 
 The extKeyUsage extension MAY be "unrestricted" as described in the following table if:
-- the Subordinate CA Certificate is issued to the same organization as the Issuing CA or an Affiliate of the Issuing CA organization, and
-- the corresponding subject CA is operated by the same organization as the Issuing CA or an Affiliate of the Issuing CA organization. 
+- the organizationName represented in the Issuer and Subject names of the corresponding certificate are either:
+   - the same, or
+   - the organizationName represented in the Subject name is an affiliate of the organizationName represented in the Issuer name
+- the corresponding CA represented by the Subject of the Cross-Certificate is operated by the same organization as the Issuing CA or an Affiliate of the Issuing CA organization. 
 
 Table: Cross-Certified Subordinate CA with Unrestricted EKU
 
